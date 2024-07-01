@@ -24,3 +24,15 @@ print(2 & 3, 2 & 4)
 
 print(2 | 3, 2 | 4)
 #output -> 3
+
+print(2<<1, 6<<2)
+#output ->4 24 (it shift the binary bits of number into right side by the number of given after the operator) 
+
+print(2>>1,6>>3)
+#output -> 1 0 (it shift the binary bits of number into left side by the number of given after the operator)
+
+print(~3)
+#output the 2's complement of number -> -4
+
+print(5^2, 7^4)
+#output 
