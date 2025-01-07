@@ -29,16 +29,24 @@ def countdown_timer(seconds):
 def study_timer(study_time, break_time):
     print("Starting study timer!")
     while True:
-        print(f"Study for {study_time} minutes.")
-        s_s = int(study_time*60)
-        countdown_timer(s_s)
-        play_beep()
-        print("Take a break.")
+        i=input("Let start grinding now. reply with y/n for yes/no :-  ")
+        if i=='y':
+            print(f"Study for {study_time} minutes.")
+            s_s = int(study_time*60)
+            countdown_timer(s_s)
+            play_beep()
+            print("Take a break.")
 
-        print(f"Take a {break_time} minute break.")
-        b_S = int(break_time * 60)
-        countdown_timer(b_S)
-        play_beep()
-        print("Back to studying.\n")
+            print(f"Take a {break_time} minute break.")
+            b_S = int(break_time * 60)
+            countdown_timer(b_S)
+            play_beep()
+            print("\nBack to studying.\n")
+        elif i=='n':
+            print("Sale kaamchor.\n")
+            
 
-study_timer(study_time=30, break_time=10)
+        else:
+            print("enter y/n for yes/no.\n")   
+
+study_timer(study_time=35, break_time=10)
